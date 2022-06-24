@@ -10,7 +10,7 @@ function App() {
     return currentUser? (children) : <Navigate to="/"/>
   }
   const {currentUser} = useContext(contextAuth)
-  console.log(currentUser)
+  console.log(currentUser.email)
   return (
     <>
       <Routes>
